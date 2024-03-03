@@ -1,0 +1,51 @@
+git config --global user.name "perizatmambetova"
+git config --global user.email "behappyperi4@gmail.com"
+git init
+rm -rf .git    to delete (master)
+git init       to get back (master)
+
+git add .      a command that saves all files
+git log command to check a history of our commits (saved files)
+
+git status     command that shows us which files in current directory
+git status  command to check the status of our files, if they are added or not.
+
+COMMIT MEANS SAVE FILES AND ADD MESSAGE
+git commit -m "message"    command that commits the files to the local repository
+
+git push   command that pushes the files to the remote repository
+
+IN GIT, WE HAVE 3 STAGES:
+   1. WORKING STAGES - FILES THAT ARE NOT ADDED
+   2. STAGING - AFETR WHEN WE RUN COMMAND "GIT ADD ." - NOW FILES ARE STAGED
+   3. COMMIT - COMMITED (SACED FILES)
+
+3 STATES OF FILES:
+   1. UNMODIFIED - 
+   2. MODIFIED
+   3. STAGED
+
+
+in the file itself after you done changes run "CTRL + S" to save file
+
+
+WHEN WE RUN COMMAND "git log" WE SEE:
+ 1. COMMIT ID (SHA/HASH)
+ 2. (HEAD -> master) - IT MEANS YOU BRANCH THAT YOU WORK ON, AND LAST COMMIT
+ 3. AUTHOR - WHO MADE THE COMMIT
+ 4. DATE - WHEN THE COMMIT WAS MADE
+ 5. COMMIT MESSAGE -WHAT THE COMMIT IS ABOUT
+
+git restore --staged file_name   command to get back from modified stage
+git commit --amend  command to edit the message of the commit
+
+HOW DO WE DELETE COMMIT?
+1. GET THE ID OF THE COMMIT THAT YOU WANT TO DELETE  
+$ git log --oneline
+2. RUN COMMMAND "git reset id_of_the_commit"
+
+git rebase     -rebrace to rewrite the history of the commit
+git rebase -i --root
+git branch -a command to show all existing branches
+git checkout -b "branchname" to create a branch 
+ git checkout "desired_branch" - command to switch between branches
