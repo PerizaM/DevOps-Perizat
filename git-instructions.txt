@@ -48,4 +48,12 @@ git rebase     -rebrace to rewrite the history of the commit
 git rebase -i --root
 git branch -a command to show all existing branches
 git checkout -b "branchname" to create a branch 
- git checkout "desired_branch" - command to switch between branches
+git checkout "desired_branch" - command to switch between branches
+git merge "branchname" - command to merge second branch to master/main. Command has to be done from the main/master branch.
+git flow - (ПОТОК) stratege how all companies work:
+    1. Off of main/master we create a feature branch ( it has a code from our main branch)
+    2. We do our work in the feature branch
+    3. When we are finished we merge the feature branch to the main/master branch
+    4. And than delete the feature branch
+git clean -f   command to delete all untracted FILES
+git clean -d -F command to delete all untrackted FOLDER
